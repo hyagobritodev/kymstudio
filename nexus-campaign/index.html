@@ -1,86 +1,80 @@
-<title>Reposicione. Renasça.</title>
+<title>Reposicione sua marca</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Filme em motion design da Nexus Agency: reposicionamento digital e rebranding de marcas.">
+<meta name="description" content="Filme de lançamento da Nexus Agency: reposicionamento digital e rebranding de marcas.">
 <style>
-/* Layout: sala de projeção — o filme no topo, a campanha em coluna única abaixo, sempre escura como o próprio filme. */
+/* Layout: sala de projeção no preto da marca — filme no topo, campanha em coluna única abaixo. */
 :root{
-  --ink:#0B0A14; --panel:#14132A; --line:#2A2946; --paper:#EEF0FF; --muted:#A3A2C7;
-  --ultra:#2D2AFF; --amber:#FF9F1C;
-  --f-display:'Archivo','Helvetica Neue',Arial,sans-serif;
-  --f-serif:'Instrument Serif',Georgia,serif;
-  --f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --ink:#0D0D0D; --panel:#171717; --line:#2A2A2A; --white:#F5F5F5; --muted:#A8A8A8;
+  --red:#FF0050; --pink:#FF2D9A; --purple:#8A2BE2;
+  --grad:linear-gradient(120deg,#FF0050 0%,#FF2D9A 55%,#8A2BE2 100%);
+  --f-title:'Bebas Neue',Impact,'Arial Narrow',sans-serif;
+  --f-text:'Poppins',Arial,sans-serif;
   color-scheme:dark;
 }
-@font-face{font-family:'Archivo';font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(assets/fonts/Archivo-var.woff2) format('woff2')}
-@font-face{font-family:'Instrument Serif';font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/InstrumentSerif-400-italic.woff2) format('woff2')}
-@font-face{font-family:'JetBrains Mono';font-weight:100 800;font-display:swap;src:url(assets/fonts/JetBrainsMono-var.woff2) format('woff2')}
-html,body{background:var(--ink);color:var(--paper)}
-body{font-family:var(--f-display);font-size:16px;line-height:1.55;margin:0}
+@font-face{font-family:'Bebas Neue';font-weight:400;font-display:swap;src:url(assets/fonts/BebasNeue-400.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-weight:300;font-display:swap;src:url(assets/fonts/Poppins-300.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-weight:400;font-display:swap;src:url(assets/fonts/Poppins-400.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-weight:600;font-display:swap;src:url(assets/fonts/Poppins-600.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-weight:700;font-display:swap;src:url(assets/fonts/Poppins-700.woff2) format('woff2')}
+html,body{background:var(--ink);color:var(--white)}
+body{font-family:var(--f-text);font-size:15px;line-height:1.6;margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 80px;display:grid;gap:56px}
-.eyebrow,.mono{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--muted)}
-header{display:grid;gap:14px}
-h1{font-size:clamp(40px,7.5vw,92px);line-height:.95;margin:0;font-weight:800;letter-spacing:-.035em;font-stretch:112%;text-wrap:balance}
-h1 em,h2 em{font-family:var(--f-serif);font-style:italic;font-weight:400;color:var(--amber);font-stretch:100%;letter-spacing:-.01em}
-.lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:62ch;margin:0}
-h2{font-size:clamp(28px,4vw,44px);line-height:1;margin:0 0 20px;font-weight:800;letter-spacing:-.03em;text-wrap:balance}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.eyebrow b{color:var(--pink);font-weight:600}
+header{display:grid;gap:12px}
+h1{font-family:var(--f-title);font-weight:400;font-size:clamp(48px,9vw,112px);line-height:.88;margin:0;letter-spacing:.005em}
+h1 span,h2 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(15px,1.8vw,18px);color:var(--muted);max-width:62ch;margin:0}
+h2{font-family:var(--f-title);font-weight:400;font-size:clamp(34px,4.6vw,54px);line-height:.95;margin:0 0 18px;letter-spacing:.01em}
 p{margin:0}
 section{display:grid;gap:18px;min-width:0}
-
-/* player */
 .theater{display:grid;gap:12px}
-.screen{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;margin:0 auto;border-radius:10px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(45,42,255,.18)}
+.screen{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;margin:0 auto;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 90px rgba(255,0,80,.16)}
 .screen.v{aspect-ratio:9/16;width:min(100%,calc(78vh * 9 / 16))}
 #stage{position:absolute;inset:0}
-.big{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:flex-start;background:transparent;border:0;cursor:pointer;color:var(--ink);padding:clamp(12px,2.5%,24px)}
-.big span{display:flex;align-items:center;gap:12px;background:var(--amber);border-radius:99px;padding:16px 26px;font:700 17px var(--f-display);box-shadow:0 10px 40px rgba(0,0,0,.45)}
-.big svg{width:18px;height:18px}
+.big{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:flex-start;background:transparent;border:0;cursor:pointer;color:#fff;padding:clamp(12px,2.5%,24px)}
+.big span{display:flex;align-items:center;gap:10px;background:var(--grad);border-radius:99px;padding:14px 24px;font:600 16px var(--f-text);box-shadow:0 10px 40px rgba(0,0,0,.45)}
+.big svg{width:16px;height:16px}
 .big[hidden]{display:none!important}
 .bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
-.btn{appearance:none;border:1px solid var(--line);background:var(--panel);color:var(--paper);border-radius:99px;padding:8px 14px;font:600 13px var(--f-display);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.btn{appearance:none;border:1px solid var(--line);background:var(--panel);color:var(--white);border-radius:99px;padding:8px 14px;font:600 13px var(--f-text);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
 .btn:hover{border-color:var(--muted)}
-.btn:focus-visible,.big:focus-visible,.seg button:focus-visible,input:focus-visible,.chap button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.btn:focus-visible,.big:focus-visible,.seg button:focus-visible,input:focus-visible,.chap button:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
 .btn svg{width:14px;height:14px}
-.time{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:104px}
-.scrub{flex:1 1 240px;min-width:0;position:relative;height:28px;display:flex;align-items:center}
-.scrub input{width:100%;margin:0;accent-color:var(--amber)}
+.time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:104px}
+.scrub{flex:1 1 240px;min-width:0;height:28px;display:flex;align-items:center}
+.scrub input{width:100%;margin:0;accent-color:var(--pink)}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
-.seg button{appearance:none;border:0;background:transparent;color:var(--muted);font:600 12px var(--f-mono);padding:8px 12px;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink)}
-.chap{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;list-style:none;margin:0;padding:0}
-.chap button{width:100%;text-align:left;appearance:none;background:transparent;border:0;border-top:2px solid var(--line);color:var(--paper);padding:10px 0 4px;cursor:pointer;font:600 14px/1.3 var(--f-display)}
-.chap button small{display:block;font:500 11px var(--f-mono);color:var(--muted);letter-spacing:.08em;margin-bottom:4px}
-.chap button.on{border-top-color:var(--amber)}
-
-/* conteúdo */
-.idea{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
-.idea > div{display:grid;gap:8px;align-content:start;min-width:0}
-.idea h3{margin:0;font-size:20px;letter-spacing:-.01em}
-.idea p{color:var(--muted)}
-.quote{font-family:var(--f-serif);font-style:italic;font-size:clamp(26px,3.6vw,40px);line-height:1.15;color:var(--paper);max-width:28ch}
+.seg button{appearance:none;border:0;background:transparent;color:var(--muted);font:600 12px var(--f-text);padding:8px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--white);color:var(--ink)}
+.chap{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;list-style:none;margin:0;padding:0}
+.chap button{width:100%;text-align:left;appearance:none;background:transparent;border:0;border-top:2px solid var(--line);color:var(--white);padding:10px 0 4px;cursor:pointer;font:600 13px/1.3 var(--f-text)}
+.chap button small{display:block;font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.08em;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.chap button.on{border-top-color:var(--pink)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px}
+.cols > div{display:grid;gap:8px;align-content:start;min-width:0}
+.cols h3{margin:0;font-size:17px;font-weight:700}
+.cols p{color:var(--muted)}
+.k{font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--pink)}
 .tablewrap{overflow-x:auto;border-top:1px solid var(--line)}
 table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
 th,td{text-align:left;vertical-align:top;padding:12px 14px 12px 0;border-bottom:1px solid var(--line)}
-th{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-td:first-child{font-family:var(--f-mono);color:var(--amber);white-space:nowrap;font-variant-numeric:tabular-nums}
-td b{font-weight:700}
-.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 28px;margin:0;padding:0;list-style:none}
-.lines li{padding:14px 0;border-bottom:1px solid var(--line);font-size:19px;font-weight:700;letter-spacing:-.01em}
-.lines li span{display:block;font:500 11px var(--f-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
-.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.phase{background:var(--panel);border-radius:10px;padding:20px;display:grid;gap:10px;align-content:start;min-width:0}
-.phase h3{margin:0;font-size:20px}
-.phase ul{margin:0;padding-left:18px;color:var(--muted);display:grid;gap:6px}
-.files{display:grid;gap:8px;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
-.files code{color:var(--paper);overflow-wrap:anywhere}
+th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.2em;color:var(--muted)}
+td:first-child{color:var(--pink);white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
+td:nth-child(2){font-style:italic}
+.ref{display:grid;gap:10px;color:var(--muted)}
+.ref li{margin-left:18px}
+.ref a{color:var(--white)}
+.files{display:grid;gap:8px;font-size:13px;color:var(--muted)}
+.files code{color:var(--white);overflow-wrap:anywhere}
 footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
-@media (prefers-reduced-motion: reduce){.big span{transition:none}}
 </style>
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">Nexus Agency · Filme de lançamento · 48 s</div>
-    <h1>Reposicione. <em>Renasça.</em></h1>
-    <p class="lede">Um comercial em motion design que apresenta a Nexus como a agência que tira marcas do passado: reposicionamento digital e rebranding, do diagnóstico à presença em cada tela.</p>
+    <div class="eyebrow">nexus agency <b>•</b> filme de lançamento <b>•</b> 49 s com locução</div>
+    <h1>Reposicione <span>sua marca.</span></h1>
+    <p class="lede">Comercial em motion design com a identidade da Nexus: pílula vermelho-rosa, raio, Bebas Neue e Poppins. Mostra a marca que parou no tempo, a virada com a Nexus e o resultado. Formatos 16:9 e 9:16.</p>
   </header>
 
   <section class="theater" aria-label="Filme">
@@ -92,8 +86,8 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
     </div>
     <div class="bar">
       <button class="btn" id="play" type="button" aria-label="Reproduzir"><svg viewBox="0 0 24 24" fill="currentColor"><path id="playicon" d="M6 4l15 8-15 8z"/></svg><span id="playlbl">Play</span></button>
-      <span class="time" id="time">00:00 / 00:48</span>
-      <div class="scrub"><input id="scrub" type="range" min="0" max="48" step="0.01" value="46.6" aria-label="Posição no filme"></div>
+      <span class="time" id="time">00:00 / 00:49</span>
+      <div class="scrub"><input id="scrub" type="range" min="0" max="49" step="0.01" value="46" aria-label="Posição no filme"></div>
       <div class="seg" role="group" aria-label="Formato">
         <button type="button" id="f169" aria-pressed="true">16:9</button>
         <button type="button" id="f916" aria-pressed="false">9:16</button>
@@ -101,67 +95,58 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
       <button class="btn" id="mute" type="button" aria-pressed="false">Som ligado</button>
     </div>
     <ol class="chap" id="chap">
-      <li><button type="button" data-t="0"><small>00:00</small>Ficou para trás</button></li>
-      <li><button type="button" data-t="5.6"><small>00:05</small>Um scroll</button></li>
-      <li><button type="button" data-t="11.8"><small>00:12</small>Ponto de virada</button></li>
-      <li><button type="button" data-t="14"><small>00:14</small>Método Nexus</button></li>
-      <li><button type="button" data-t="24"><small>00:24</small>A nova marca</button></li>
-      <li><button type="button" data-t="32"><small>00:32</small>Antes / depois</button></li>
-      <li><button type="button" data-t="38"><small>00:38</small>O que muda</button></li>
-      <li><button type="button" data-t="42"><small>00:42</small>Assinatura</button></li>
+      <li><button type="button" data-t="0"><small>00:00</small>Já foi novidade</button></li>
+      <li><button type="button" data-t="8.4"><small>00:08</small>Some no feed</button></li>
+      <li><button type="button" data-t="12.8"><small>00:13</small>Entra a Nexus</button></li>
+      <li><button type="button" data-t="15.3"><small>00:15</small>Reposiciona</button></li>
+      <li><button type="button" data-t="24"><small>00:24</small>Nova história</button></li>
+      <li><button type="button" data-t="27"><small>00:27</small>Conexão e resultado</button></li>
+      <li><button type="button" data-t="32.2"><small>00:32</small>Mais</button></li>
+      <li><button type="button" data-t="36.4"><small>00:36</small>Assinatura</button></li>
     </ol>
   </section>
 
   <section>
-    <h2>A ideia</h2>
-    <p class="quote">“Marcas não envelhecem. Elas ficam para trás.”</p>
-    <div class="idea">
-      <div><div class="mono">Insight</div><h3>O dono da marca não vê o próprio atraso</h3><p>Ninguém acorda achando que a própria marca ficou velha. Ela só para de ser escolhida, um scroll de cada vez. O filme mostra esse momento de fora.</p></div>
-      <div><div class="mono">Mecânica</div><h3>O protagonista se chama “Sua Marca”</h3><p>O logo antigo do filme é literalmente “Sua Marca”, com swoosh, bisel e “Qualidade e Confiança desde 2009”. Quem assiste se reconhece no primeiro segundo e quer ver a própria versão 2026.</p></div>
-      <div><div class="mono">Prova</div><h3>O método aparece, não só a promessa</h3><p>Diagnóstico, estratégia, identidade e presença digital viram quatro capítulos visuais. O mapa de posicionamento mostra a marca saindo de “genérica e esquecível” para “única e desejada”.</p></div>
-      <div><div class="mono">Assinatura</div><h3>Nexus: o ponto onde tudo se conecta</h3><p>O ponto âmbar que interrompe o glitch aos 12 s é o mesmo nó do símbolo Nexus no final. A virada da marca tem um lugar, e é a Nexus.</p></div>
+    <h2>A <span>ideia</span></h2>
+    <div class="cols">
+      <div><div class="k">Antes e depois</div><h3>Toda marca tem uma virada</h3><p>O filme abre com a marca do cliente presa em 2009, congelada enquanto o mercado passa correndo. O raio da Nexus corta a cena e tudo muda de cor, ritmo e trilha.</p></div>
+      <div><div class="k">Espelho</div><h3>O protagonista é “Sua Marca”</h3><p>O logo antigo é literalmente “Sua Marca”, com selo de NOVIDADE e “Qualidade e Confiança desde 2009”. Quem assiste se reconhece e quer ver a própria versão nova.</p></div>
+      <div><div class="k">Identidade</div><h3>A marca Nexus em movimento</h3><p>A pílula vira transição de tela, o raio vira corte e o padrão de arcos “n” e raios em linha desenha o fundo da assinatura. Tudo com a paleta #FF0050, #FF2D9A e #8A2BE2.</p></div>
+      <div><div class="k">Linguagem</div><h3>Motion de fintech</h3><p>Movimento contínuo com molas, celular em 3D com telas animadas, cartões flutuando, tipografia grande cortando no ritmo da locução e um efeito sonoro em cada transição.</p></div>
     </div>
   </section>
 
   <section>
-    <h2>Roteiro</h2>
+    <h2>Roteiro e <span>locução</span></h2>
     <div class="tablewrap">
       <table>
-        <thead><tr><th>Tempo</th><th>Imagem</th><th>Texto na tela</th><th>Som</th></tr></thead>
+        <thead><tr><th>Tempo</th><th>Locução</th><th>Imagem</th></tr></thead>
         <tbody>
-          <tr><td>00:00</td><td>Tela de CRT. O logo “Sua Marca” pisca, com o arquivo “FINAL_v7_agora_vai.jpg”.</td><td><b>Marcas não envelhecem.</b> Elas ficam <i>para trás.</i></td><td>Drone grave, tic-tac de relógio</td></tr>
-          <tr><td>00:05</td><td>O logo encolhe até virar um card num feed infinito que acelera.</td><td><b>Um scroll.</b> É o tempo que você tem. Quem não se reposiciona…</td><td>Chimbal acelerando, riser</td></tr>
-          <tr><td>00:10</td><td>Glitch. As letras somem uma a uma. “ERRO 404 · relevância não encontrada”.</td><td><b>desaparece.</b></td><td>Bleeps digitais, corte seco</td></tr>
-          <tr><td>00:12</td><td>Silêncio. Um ponto âmbar acende no escuro e explode em azul ultramar.</td><td>E se ela pudesse <i>renascer?</i></td><td>Impacto sub, sino</td></tr>
-          <tr><td>00:14</td><td>Método Nexus em quatro etapas: auditoria com nota 38/100, mapa de posicionamento, construção do símbolo e da paleta, site, app e post.</td><td>Diagnóstico. Estratégia. Identidade. Presença digital.</td><td>Kick entra, baixo e arpejo em Lá menor</td></tr>
-          <tr><td>00:24</td><td>Flash. A nova “sua marca.” aparece e vai para o mundo: outdoor, app, social, papelaria, site, stories, sistema.</td><td><b>Mesma essência. Nova potência. Em todo lugar.</b></td><td>Drop completo, um corte por tempo</td></tr>
-          <tr><td>00:32</td><td>Antes e depois com divisória deslizante: 2009 contra 2026.</td><td>Reposicionar é ocupar um <i>novo lugar</i> na mente de quem importa.</td><td>Groove segue</td></tr>
-          <tr><td>00:38</td><td>Três cortes secos em cores cheias; a palavra se alarga no eixo de largura da fonte.</td><td><b>Clareza. Relevância. Desejo.</b></td><td>Stabs de acorde</td></tr>
-          <tr><td>00:42</td><td>O N da Nexus se desenha, os nós acendem, o wordmark se expande.</td><td><b>NEXUS Agency.</b> Reposicione. <i>Renasça.</i> Agende seu diagnóstico de marca.</td><td>Impacto final, brilho, acorde aberto</td></tr>
+          <tr><td>00:00</td><td>Sua marca já foi a novidade.</td><td>Flash. O logo “Sua Marca” aparece com selo NOVIDADE!</td></tr>
+          <tr><td>00:04</td><td>Mas o mercado mudou… e ela ficou parada no tempo.</td><td>O contador de anos rola de 2009 a 2026; tendências passam voando; o logo perde a cor e pausa.</td></tr>
+          <tr><td>00:09</td><td>Hoje, quem não se conecta, desaparece no feed.</td><td>Celular em 3D com o feed acelerando; o post da marca antiga se desfaz em pedaços.</td></tr>
+          <tr><td>00:13</td><td>É aí que entra a Nexus.</td><td>Silêncio. Um raio cai, a logo Nexus se monta e a pílula cresce até virar a tela.</td></tr>
+          <tr><td>00:15</td><td>A gente reposiciona a sua marca:</td><td>Fundo em degradê da marca; o cartão com o logo antigo gira e revela a nova “sua marca.”.</td></tr>
+          <tr><td>00:19</td><td>estratégia, identidade e presença digital.</td><td>Três etapas com cartões: alvo de posicionamento, paleta e tipografia, perfil novo com notificações.</td></tr>
+          <tr><td>00:24</td><td>Uma nova história, contada do jeito certo.</td><td>Ícone de play e três stories entrando em sequência.</td></tr>
+          <tr><td>00:27</td><td>Que conecta com as pessoas, e gera resultado de verdade.</td><td>Rede de pessoas ligada à marca; depois o gráfico subindo com alcance, engajamento e vendas.</td></tr>
+          <tr><td>00:32</td><td>Mais alcance. Mais valor. Mais clientes.</td><td>Três cortes secos em vermelho, rosa e roxo.</td></tr>
+          <tr><td>00:36</td><td>Nexus Agency. Ideias que conectam. Ações que transformam.</td><td>Raio, logo e o padrão da marca se desenhando.</td></tr>
+          <tr><td>00:43</td><td>Reposicione a sua marca. Fale com a gente.</td><td>CTA em pílula, nexusagency.com.br e @nexus.agency.</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
   <section>
-    <h2>Linhas de campanha</h2>
-    <ul class="lines">
-      <li><span>Assinatura</span>Reposicione. Renasça.</li>
-      <li><span>Manifesto</span>Marcas não envelhecem. Elas ficam para trás.</li>
-      <li><span>Feed / Reels</span>Um scroll é todo o tempo que você tem.</li>
-      <li><span>Oferta</span>Qual a nota da sua marca? Faça o diagnóstico.</li>
-      <li><span>LinkedIn</span>Reposicionar é ocupar um novo lugar na mente de quem importa.</li>
-      <li><span>OOH</span>Sua marca, versão 2026.</li>
+    <h2>Referências <span>pesquisadas</span></h2>
+    <ul class="ref">
+      <li>Sistema de motion do Nubank feito pelo estúdio illo: formas em camadas, transparência e profundidade sutil (<a href="https://mindsparklemag.com/design/nubank-motion-system-illo" target="_blank" rel="noopener">Mindsparkle</a>).</li>
+      <li>“Com o Nu é outra história” (W+K SP): narrativa de antes e depois com códigos de filmes e séries (<a href="https://nu.com/en/newsroom/consumers/nubank-launches-with-nu-its-a-whole-new-story-campaign-inspired-by-successful-films-and-series" target="_blank" rel="noopener">Nu</a>).</li>
+      <li>Inter e Talent: filmes que mostram o app em ação e posicionamento de super app (<a href="https://propmark.com.br/anunciantes/inter-reforca-posicionamento-em-campanha-assinada-pela-talent/" target="_blank" rel="noopener">Propmark</a>).</li>
+      <li>Tendências de motion: tipografia cinética como peça central e easing consistente (<a href="https://hatchstudios.com/popular-motion-graphics-trends-taking-over-in-2025/" target="_blank" rel="noopener">Hatch Studios</a>).</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Desdobramentos</h2>
-    <div class="phases">
-      <div class="phase"><div class="mono">Semana 1 · Provocação</div><h3>“Ainda em 2009?”</h3><ul><li>Reels com só os 10 primeiros segundos, terminando no glitch</li><li>Enquete nos stories: “sua marca tem mais de 5 anos sem mudar?”</li><li>Carrossel com logos genéricos e a pergunta “qual desses é o seu?”</li></ul></div>
-      <div class="phase"><div class="mono">Semana 2 · Lançamento</div><h3>O filme completo</h3><ul><li>48 s em 16:9 para YouTube e site, 9:16 para Reels e TikTok</li><li>Cortes de 15 s (00:24–00:32 + assinatura) para mídia paga</li><li>Post do antes e depois com divisória como carrossel</li></ul></div>
-      <div class="phase"><div class="mono">Semanas 3 a 6 · Conversão</div><h3>Diagnóstico de marca</h3><ul><li>A nota “Saúde da marca 38/100” do filme vira um quiz real</li><li>Resultado em PDF com os quatro pontos do diagnóstico</li><li>Lead qualificado segue para reunião com a Nexus</li></ul></div>
-    </div>
+    <p style="color:var(--muted)">O filme segue essa linguagem com elementos 100% da Nexus; nenhum material das marcas citadas foi usado.</p>
   </section>
 
   <section>
@@ -169,12 +154,12 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
     <div class="files">
       <div>Vídeo 16:9 · <code>nexus-campaign/output/nexus-reposicione-16x9.mp4</code></div>
       <div>Vídeo 9:16 · <code>nexus-campaign/output/nexus-reposicione-9x16.mp4</code></div>
-      <div>Trilha original · <code>nexus-campaign/assets/audio/nexus-soundtrack.mp3</code></div>
+      <div>Trilha com locução · <code>nexus-campaign/assets/audio/nexus-soundtrack.mp3</code></div>
       <div>Plano completo · <code>nexus-campaign/CAMPANHA.md</code></div>
     </div>
   </section>
 
-  <footer>Filme, trilha e identidade de exemplo feitos do zero para a Nexus Agency. “Sua Marca” é uma marca fictícia usada como espelho do cliente. O domínio <span class="mono" style="text-transform:none">nexus.agency</span> no CTA é provisório.</footer>
+  <footer>Locução em voz sintética local (Piper TTS, voz pt-BR “edresson”, CC BY 4.0). Para veiculação paga, o mesmo texto pode ser regravado por um locutor e trocado sem mexer nos cortes. “Sua Marca” é uma marca fictícia usada como espelho do cliente.</footer>
 </div>
 
 <audio id="music" src="assets/audio/nexus-soundtrack.mp3" preload="auto"></audio>
@@ -183,13 +168,12 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 (function () {
   const $ = id => document.getElementById(id);
   const screen = $('screen'), audio = $('music'), scrub = $('scrub');
-  const POSTER = 46.6, DUR = 48;
+  const POSTER = 46.0, DUR = 49;
   let film = null, playing = false, t = POSTER, clock0 = 0, t0 = 0, audioOk = true;
-
   const fmt = s => { s = Math.max(0, Math.floor(s)); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
   const chapters = Array.from(document.querySelectorAll('#chap button'));
   function ui() {
-    $('time').textContent = fmt(t) + ' / 00:48';
+    $('time').textContent = fmt(t) + ' / 00:49';
     scrub.value = t.toFixed(2);
     let on = 0; chapters.forEach((b, i) => { if (t >= Number(b.dataset.t)) on = i; });
     chapters.forEach((b, i) => b.classList.toggle('on', i === on));
@@ -198,9 +182,8 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
     $('play').setAttribute('aria-label', playing ? 'Pausar' : 'Reproduzir');
   }
   function draw() { if (film) film.seek(t); ui(); }
-
   audio.addEventListener('error', () => { audioOk = false; });
-  function now() { return performance.now() / 1000; }
+  const now = () => performance.now() / 1000;
   function play() {
     if (t >= DUR - 0.05) t = 0;
     playing = true; $('bigplay').hidden = true;
@@ -225,8 +208,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
     if (audioOk) { try { audio.currentTime = t; } catch (e) {} }
     draw();
   }
-
-  $('bigplay').addEventListener('click', () => seekTo(0) || play());
+  $('bigplay').addEventListener('click', () => { seekTo(0); play(); });
   $('play').addEventListener('click', () => (playing ? pause() : play()));
   scrub.addEventListener('input', () => { seekTo(Number(scrub.value)); $('bigplay').hidden = true; });
   chapters.forEach(b => b.addEventListener('click', () => { seekTo(Number(b.dataset.t)); $('bigplay').hidden = true; if (!playing) play(); }));
@@ -247,12 +229,9 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
   document.addEventListener('keydown', e => {
     if (e.code === 'Space' && !/INPUT|BUTTON/.test(document.activeElement.tagName)) { e.preventDefault(); playing ? pause() : play(); }
   });
-
   let saved = null;
   try { saved = localStorage.getItem('nx-format'); } catch (e) {}
-  const startV = saved ? saved === 'v' : window.matchMedia('(max-width: 640px) and (orientation: portrait)').matches;
-  if (startV) setFormat(true);
-
+  if (saved ? saved === 'v' : window.matchMedia('(max-width: 640px) and (orientation: portrait)').matches) setFormat(true);
   NexusFilm.ready().then(() => {
     film = NexusFilm.mount($('stage'));
     requestAnimationFrame(() => requestAnimationFrame(() => { film.layout(); draw(); }));

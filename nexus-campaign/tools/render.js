@@ -11,7 +11,7 @@ const fps = Number(args[1] || 30);
 const [W, H] = fmt === '9x16' ? [1080, 1920] : [1920, 1080];
 const opt = k => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const stills = opt('--stills');
-const from = Number(opt('--from') || 0), to = Number(opt('--to') || 48);
+const from = Number(opt('--from') || 0), to = Number(opt('--to') || 49);
 const root = path.resolve(__dirname, '..');
 const out = path.join(root, 'output');
 fs.mkdirSync(out, { recursive: true });
@@ -37,7 +37,7 @@ fs.mkdirSync(out, { recursive: true });
   const file = path.join(out, `nexus-reposicione-${fmt}.mp4`);
   const audio = path.join(root, 'assets/audio/nexus-soundtrack.wav');
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error',
-    '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'png', '-i', '-',
+    '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
     '-ss', String(from), '-t', String(to - from), '-i', audio,
     '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-pix_fmt', 'yuv420p', '-profile:v', 'high',
     '-movflags', '+faststart', '-c:a', 'aac', '-b:a', '192k', '-shortest', file], { stdio: ['pipe', 'inherit', 'inherit'] });
@@ -46,7 +46,7 @@ fs.mkdirSync(out, { recursive: true });
   for (let i = 0; i < n; i++) {
     const t = from + i / fps;
     await page.evaluate(t => film.seek(t), t);
-    const buf = await page.screenshot({ type: 'png' });
+    const buf = await page.screenshot({ type: 'jpeg', quality: 95 });
     if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
     if (i % 60 === 0) process.stdout.write(`\r${fmt} ${i}/${n} (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
   }

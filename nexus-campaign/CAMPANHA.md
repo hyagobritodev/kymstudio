@@ -1,140 +1,105 @@
-# Nexus Agency · "Reposicione. Renasça."
+# Nexus Agency · "Reposicione sua marca"
 
-Campanha de lançamento da Nexus Agency, agência de reposicionamento digital e rebranding de marcas.
+Campanha de lançamento da Nexus Agency (marketing, storymaking e performance), com foco em reposicionamento digital e rebranding de marcas.
 
 ## 1. Plataforma
 
 | | |
 |---|---|
-| **Problema do cliente** | A marca perdeu relevância e o dono não percebe. Ela não "envelheceu": o mercado andou e ela ficou parada. |
-| **Insight** | Ninguém acorda achando que a própria marca ficou velha. Ela só para de ser escolhida, um scroll de cada vez. |
-| **Ideia central** | Marcas não envelhecem. Elas ficam para trás. A Nexus é o ponto de virada. |
-| **Assinatura** | **Reposicione. Renasça.** |
-| **Promessa** | Mesma essência, nova potência, em todo lugar. |
-| **Prova** | Um método visível em 4 etapas: Diagnóstico → Estratégia → Identidade → Presença digital. |
-| **Chamada** | Agende seu diagnóstico de marca. |
-| **Público** | Donos e diretores de marketing de PMEs e marcas regionais com 5 a 20 anos de mercado, identidade defasada e presença digital fraca. |
-| **Tom** | Direto, confiante, com humor sobre o "jeitão 2009" e sem desmerecer a história do cliente. |
+| **Problema** | A marca do cliente já foi novidade, mas parou no tempo enquanto o mercado mudou. Hoje ela some no feed. |
+| **Ideia** | Toda marca tem uma virada. A Nexus é o raio que provoca essa virada. |
+| **Promessa** | Reposicionar a marca com estratégia, identidade e presença digital, para conectar com pessoas e gerar resultado. |
+| **Assinatura** | Ideias que conectam. Ações que transformam. |
+| **Chamada** | Reposicione a sua marca. Fale com a gente. |
+| **Público** | Donos e gestores de marketing de PMEs e marcas regionais com identidade defasada e presença digital fraca. |
+| **Tom** | Direto, energético e otimista, com humor sobre o "jeitão 2009" e sem desmerecer a história do cliente. |
 
-**Mecânica-espelho.** O logo antigo do filme se chama literalmente "Sua Marca" (WordArt, bisel, swoosh, "Qualidade e Confiança desde 2009", arquivo `SUA_MARCA_logo_FINAL_v7_agora_vai.jpg`). Quem assiste se reconhece no primeiro segundo e passa o resto do filme querendo a própria versão 2026.
+**Mecânica-espelho.** O logo antigo do filme se chama "Sua Marca" (WordArt, selo NOVIDADE!, "Qualidade e Confiança desde 2009"). Quem assiste se reconhece e quer ver a própria versão nova.
 
-**Fio condutor.** O ponto âmbar que interrompe o glitch aos 12 s é o mesmo nó do símbolo da Nexus no fim. A virada da marca tem um lugar, e esse lugar é a Nexus ("nexus", do latim: o ponto onde tudo se conecta).
+## 2. Identidade aplicada no filme
 
-## 2. Filme principal (48 s, 120 BPM)
+| Elemento da marca | Uso no filme |
+|---|---|
+| Pílula em degradê | Monta a logo e cresce até virar a tela na transição para o "depois" (00:15) |
+| Raio | Corta o silêncio aos 13 s, abre a assinatura aos 36 s e aparece nos cortes "Mais…" |
+| Arco "n" vazado + raios em linha | Padrão de fundo que se desenha nas cenas da Nexus |
+| #FF0050 · #FF2D9A · #8A2BE2 | Degradê das cenas da Nexus e as três cores dos cortes "Mais alcance / valor / clientes" |
+| #0D0D0D · #F5F5F5 | Fundo do "antes" e da assinatura; seção clara de conexão e resultado |
+| Bebas Neue | Títulos e frases da locução na tela |
+| Poppins | Logo, textos de apoio, interface e slogan |
 
-Cada corte cai num tempo musical (1 tempo = 0,5 s).
+## 3. Roteiro e locução (49 s, 120 BPM)
 
-| Tempo | Imagem | Texto na tela | Som |
+| Tempo | Locução | Imagem | Som |
 |---|---|---|---|
-| 00:00 | Tela CRT. O logo "Sua Marca" pisca. HUD: `1024 × 768 · 72 dpi`, `última atualização: 2009`. | **Marcas não envelhecem.** / Elas ficam *para trás.* | Drone grave, tic-tac |
-| 00:05 | O logo encolhe até virar um card num feed infinito que acelera. | **Um scroll.** / É o tempo que *você tem.* / Quem não se reposiciona… | Chimbal acelerando |
-| 00:10 | Glitch, letras somem. `ERRO 404 · relevância não encontrada` | **desaparece.** | Bleeps, corte seco |
-| 00:12 | Silêncio. Ponto âmbar acende e se expande em azul ultramar. | E se ela pudesse *renascer?* | Impacto sub, sino |
-| 00:14 | **Diagnóstico**: auditoria com 4 apontamentos e "Saúde da marca" caindo de 100 para 38. | Diagnóstico. | Kick entra |
-| 00:16.5 | **Estratégia**: mapa de posicionamento (genérica ↔ única, esquecível ↔ desejada); a marca viaja de "hoje" para "amanhã". | Estratégia. | Baixo + arpejo |
-| 00:19 | **Identidade**: guias de construção, o novo símbolo se monta, paleta e tipografia. | Identidade. | Build |
-| 00:21.5 | **Presença digital**: site, app e post entram em cena, zoom e flash. | Presença digital. | Riser + rufar |
-| 00:24 | DROP. A nova "sua marca." aparece. | sua marca · versão 2026 | Drop completo |
-| 00:25 a 00:32 | Um corte por segundo: outdoor, app, social, papelaria, site, stories, sistema visual. | **Mesma essência. Nova potência. Em todo lugar.** | Groove |
-| 00:32 | Antes/depois com divisória deslizante. | Antes · 2009 / Depois · 2026 | |
-| 00:34 | Manifesto em azul ultramar. | Reposicionar é ocupar / um *novo lugar* / na mente de quem importa. | |
-| 00:38 | Três cortes secos; a palavra se alarga no eixo de largura da fonte. | **Clareza.** para ser entendida / **Relevância.** para ser escolhida / **Desejo.** para ser lembrada | Stabs |
-| 00:42 | O N da Nexus se desenha, os nós acendem, o wordmark se expande. | **NEXUS** Agency / Reposicione. *Renasça.* / Agende seu diagnóstico de marca → nexus.agency | Impacto final, acorde |
+| 00:00 | Sua marca já foi a novidade. | Flash de câmera; logo "Sua Marca" com selo NOVIDADE! | Acordes abafados, tic-tac |
+| 00:04 | Mas o mercado mudou… e ela ficou parada no tempo. | Contador 2009 → 2026; tendências passando; logo perde a cor e pausa | Chimbal acelerando, whooshes |
+| 00:09 | Hoje, quem não se conecta, desaparece no feed. | Celular 3D, feed acelerando; post antigo se desfaz | Arpejo + riser; tape-stop |
+| 00:13 | É aí que entra a Nexus. | Silêncio, raio, logo Nexus se monta; pílula vira a tela | Trovão, pops, brilho |
+| 00:15 | A gente reposiciona a sua marca: | Degradê da marca; cartão gira do logo antigo para o novo | DROP |
+| 00:19 | estratégia, identidade e presença digital. | Alvo de posicionamento; paleta e tipografia; perfil novo com notificações | Groove + notificações |
+| 00:24 | Uma nova história, contada do jeito certo. | Play e três stories em sequência | Groove leve |
+| 00:27 | Que conecta com as pessoas, e gera resultado de verdade. | Rede de pessoas; gráfico subindo com alcance, engajamento e vendas | Pops, riser |
+| 00:32 | Mais alcance. Mais valor. Mais clientes. | Três cortes secos em vermelho, rosa e roxo | Stabs + impactos |
+| 00:36 | Nexus Agency. Ideias que conectam. Ações que transformam. | Raio, logo, padrão da marca se desenhando | Trovão, groove |
+| 00:43 | Reposicione a sua marca. Fale com a gente. | CTA, botão em pílula, site e @ | Clique, acorde final |
 
-### Locução opcional (para gravar com locutor)
+A locução foi feita com voz sintética local (Piper TTS, voz pt-BR "edresson", licença CC BY 4.0). Para mídia paga, recomenda-se regravar o mesmo texto com locutor: basta trocar os arquivos em `assets/audio/vo/` mantendo os tempos de `VO_AT` e rodar `tools/soundtrack.py`.
 
-> Sua marca não envelheceu.
-> Ela ficou para trás.
-> Hoje, você tem um scroll para ser lembrado.
-> E quem não se reposiciona… desaparece.
-> *(pausa)*
-> E se ela pudesse renascer?
-> A Nexus diagnostica, reposiciona, redesenha e coloca a sua marca em cada tela.
-> Mesma essência. Nova potência.
-> Reposicionar é ocupar um novo lugar na mente de quem importa.
-> Nexus Agency. Reposicione. Renasça.
-
-O filme foi feito para funcionar **sem locução**, porque boa parte do vídeo em feed é assistida sem som; a locução é uma camada extra para YouTube e TV.
-
-## 3. Cortes e formatos
+## 4. Cortes e formatos
 
 | Peça | Duração | Formato | Trecho | Uso |
 |---|---|---|---|---|
-| Filme | 48 s | 16:9 e 9:16 | completo | YouTube, site, LinkedIn, Reels, TikTok |
-| Teaser | 12 s | 9:16 | 00:00–00:12 (termina no glitch) | semana 1, sem logo da Nexus |
-| Corte 15 | 15 s | 9:16 e 1:1 | 00:24–00:32 + 00:42–00:48 | mídia paga |
-| Bumper | 6 s | 16:9 | 00:10–00:12 + 00:44–00:48 | YouTube bumper |
-| Carrossel | 5 cards | 4:5 | antes/depois + 3 palavras | Instagram, LinkedIn |
-| OOH | estático | 3:1 | "Sua marca, versão 2026." | mobiliário urbano |
+| Filme | 49 s | 16:9 e 9:16 | completo | YouTube, site, LinkedIn, Reels, TikTok |
+| Teaser | 13 s | 9:16 | 00:00–00:13 (termina no silêncio antes do raio) | semana 1, sem logo |
+| Corte 15 | 15 s | 9:16 | 00:13–00:24 + 00:43–00:47 | mídia paga |
+| Bumper | 6 s | 16:9 | 00:32–00:36 + 00:45–00:47 | YouTube bumper |
+| Carrossel | 5 cards | 4:5 | antes/depois + "Mais…" | Instagram, LinkedIn |
 
-Os cortes saem do mesmo motor: `node tools/render.js 9x16 30 --from 24 --to 32`.
+Os cortes saem do mesmo motor, por exemplo: `node tools/render.js 9x16 30 --from 13 --to 24`.
 
-## 4. Desdobramento (6 semanas)
+## 5. Desdobramento (6 semanas)
 
-**Semana 1 · Provocação ("Ainda em 2009?")**
-- Teaser de 12 s sem assinatura.
-- Stories com enquete: "Sua marca está há mais de 5 anos sem mudar?"
-- Carrossel com logos genéricos: "Qual desses é o seu?"
+**Semana 1 · Provocação.** Teaser de 13 s sem assinatura; stories com enquete "Sua marca está há mais de 5 anos sem mudar?"; carrossel com logos genéricos: "Qual desses é o seu?".
 
-**Semana 2 · Lançamento**
-- Filme completo nos dois formatos; fixado no perfil e no topo do site.
-- Post de antes e depois com a divisória deslizante.
-- Disparo para a base de contatos com o filme e a oferta.
+**Semana 2 · Lançamento.** Filme completo nos dois formatos, fixado no perfil e no topo do site; post de antes e depois; disparo para a base de contatos.
 
-**Semanas 3 a 6 · Conversão: "Qual a nota da sua marca?"**
-- A "Saúde da marca 38/100" do filme vira um quiz de diagnóstico real (10 perguntas: identidade, consistência, presença digital, diferenciação).
-- Resultado com nota e os 4 pontos do diagnóstico, entregue por e-mail.
-- Nota abaixo de 60 → convite para reunião de diagnóstico com a Nexus.
-- Remarketing com o corte de 15 s para quem viu mais de 50% do filme.
+**Semanas 3 a 6 · Conversão.** Diagnóstico de marca gratuito (quiz de 10 perguntas sobre identidade, consistência, presença digital e diferenciação), com resultado por e-mail e convite para conversa com a Nexus; remarketing com o corte de 15 s para quem assistiu mais da metade do filme.
 
-## 5. Legendas prontas
+## 6. Legendas prontas
 
-**Reels / TikTok (filme)**
-> Sua marca não envelheceu. Ela ficou para trás. 👀
-> Em 48 segundos, o que a Nexus faz por marcas que pararam no tempo.
-> Qual a nota da sua marca? Link na bio.
-> #rebranding #branding #marketingdigital #posicionamento #identidadevisual
+**Reels / TikTok**
+> Sua marca já foi a novidade. E agora? ⚡
+> Em 49 segundos, o que a Nexus faz por marcas que pararam no tempo.
+> Fale com a gente: link na bio.
+> #rebranding #branding #marketingdigital #posicionamento #storytelling
 
 **LinkedIn**
-> Toda marca nasce. Poucas renascem.
-> Reposicionar não é trocar o logo: é ocupar um novo lugar na mente de quem importa.
-> Na Nexus, isso acontece em quatro etapas: diagnóstico, estratégia, identidade e presença digital.
-> Se a sua marca ainda fala como em 2009, vale uma conversa.
+> Toda marca tem uma virada.
+> Reposicionar não é só trocar o logo: é estratégia, identidade e presença digital trabalhando juntas para conectar com pessoas e gerar resultado.
+> Ideias que conectam. Ações que transformam.
 
-**Teaser (semana 1)**
+**Teaser**
 > Um scroll. É todo o tempo que você tem.
-> Dia 14, alguma coisa muda.
+> Em breve, uma virada. ⚡
 
-## 6. Como medir
+## 7. Como medir
 
 | Etapa | Métrica | Meta inicial |
 |---|---|---|
-| Atenção | Retenção até 12 s (glitch) | acima de 45% |
-| Atenção | Visualização completa (48 s) | acima de 20% |
+| Atenção | Retenção até 13 s (o raio) | acima de 45% |
+| Atenção | Visualização completa | acima de 20% |
 | Interesse | Cliques no link / CTR | acima de 1,2% |
-| Conversão | Quizzes de diagnóstico concluídos | 300 em 4 semanas |
-| Negócio | Reuniões de diagnóstico agendadas | 30 em 6 semanas |
+| Conversão | Diagnósticos concluídos | 300 em 4 semanas |
+| Negócio | Reuniões agendadas | 30 em 6 semanas |
 
-Metas são pontos de partida e devem ser recalibradas com a primeira semana de dados.
+As metas são pontos de partida, para recalibrar com a primeira semana de dados.
 
-## 7. Sistema visual do filme
+## 8. Referências de linguagem pesquisadas
 
-| Token | Valor | Papel |
-|---|---|---|
-| Ultramar | `#2D2AFF` | cor da transformação, fundos do método e do manifesto |
-| Âmbar | `#FF9F1C` | o nó Nexus: ponto de virada, CTA, acentos |
-| Névoa | `#EEF0FF` | texto e fundos claros |
-| Noite | `#0B0A14` | o "antes", a assinatura |
-| Lilás | `#B9B6FF` | apoio, legendas |
+- Sistema de motion do Nubank (estúdio illo): formas em camadas, transparência, profundidade sutil, integrado ao app.
+- "Com o Nu é outra história" (W+K SP): antes e depois com códigos de filmes e séries.
+- Inter e Talent: o app em ação, humor e posicionamento de super app.
+- Tendências de motion: tipografia cinética como peça central, easing consistente, 3D em produto.
 
-- **Archivo** (variável, largura 62–125): títulos. A animação do eixo de largura é a metáfora visual do reposicionamento.
-- **Instrument Serif itálico**: palavras de virada ("para trás", "renascer", "novo lugar", "Renasça").
-- **JetBrains Mono**: rótulos técnicos, a linguagem de manual de marca.
-
-## 8. Produção
-
-- Filme 100% gerado em código (HTML/SVG/JS), quadro a quadro, sem bancos de imagem.
-- Trilha original sintetizada do zero (sem samples), 120 BPM, Lá menor, −14,9 LUFS integrado (padrão de streaming).
-- Fontes OFL (Google Fonts), livres para uso comercial.
-- "Sua Marca" é uma marca fictícia; os mockups não representam clientes reais.
-- Antes de veicular: trocar `nexus.agency` pelo domínio real em `film.js` (`CONFIG.site`) e renderizar de novo.
+O filme usa essa linguagem com elementos exclusivamente da Nexus; nenhum material das marcas citadas foi reproduzido.
