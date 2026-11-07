@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Nexus · render</title>
+<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}#stage{position:fixed;inset:0}</style>
+</head><body><div id="stage"></div>
+<script src="film.js"></script>
+<script>
+NexusFilm.ready().then(() => {
+  window.film = NexusFilm.mount(document.getElementById('stage'));
+  // segunda passada de layout depois que as fontes variáveis assentam
+  requestAnimationFrame(() => requestAnimationFrame(() => { film.layout(); film.seek(0); window.__ready = true; }));
+});
+</script></body></html>

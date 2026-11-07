@@ -1,0 +1,264 @@
+<title>Reposicione. Renasça.</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Filme em motion design da Nexus Agency: reposicionamento digital e rebranding de marcas.">
+<style>
+/* Layout: sala de projeção — o filme no topo, a campanha em coluna única abaixo, sempre escura como o próprio filme. */
+:root{
+  --ink:#0B0A14; --panel:#14132A; --line:#2A2946; --paper:#EEF0FF; --muted:#A3A2C7;
+  --ultra:#2D2AFF; --amber:#FF9F1C;
+  --f-display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --f-serif:'Instrument Serif',Georgia,serif;
+  --f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+@font-face{font-family:'Archivo';font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(assets/fonts/Archivo-var.woff2) format('woff2')}
+@font-face{font-family:'Instrument Serif';font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/InstrumentSerif-400-italic.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-weight:100 800;font-display:swap;src:url(assets/fonts/JetBrainsMono-var.woff2) format('woff2')}
+html,body{background:var(--ink);color:var(--paper)}
+body{font-family:var(--f-display);font-size:16px;line-height:1.55;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 80px;display:grid;gap:56px}
+.eyebrow,.mono{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--muted)}
+header{display:grid;gap:14px}
+h1{font-size:clamp(40px,7.5vw,92px);line-height:.95;margin:0;font-weight:800;letter-spacing:-.035em;font-stretch:112%;text-wrap:balance}
+h1 em,h2 em{font-family:var(--f-serif);font-style:italic;font-weight:400;color:var(--amber);font-stretch:100%;letter-spacing:-.01em}
+.lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:62ch;margin:0}
+h2{font-size:clamp(28px,4vw,44px);line-height:1;margin:0 0 20px;font-weight:800;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0}
+section{display:grid;gap:18px;min-width:0}
+
+/* player */
+.theater{display:grid;gap:12px}
+.screen{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;margin:0 auto;border-radius:10px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(45,42,255,.18)}
+.screen.v{aspect-ratio:9/16;width:min(100%,calc(78vh * 9 / 16))}
+#stage{position:absolute;inset:0}
+.big{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:flex-start;background:transparent;border:0;cursor:pointer;color:var(--ink);padding:clamp(12px,2.5%,24px)}
+.big span{display:flex;align-items:center;gap:12px;background:var(--amber);border-radius:99px;padding:16px 26px;font:700 17px var(--f-display);box-shadow:0 10px 40px rgba(0,0,0,.45)}
+.big svg{width:18px;height:18px}
+.big[hidden]{display:none!important}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.btn{appearance:none;border:1px solid var(--line);background:var(--panel);color:var(--paper);border-radius:99px;padding:8px 14px;font:600 13px var(--f-display);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.btn:hover{border-color:var(--muted)}
+.btn:focus-visible,.big:focus-visible,.seg button:focus-visible,input:focus-visible,.chap button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.btn svg{width:14px;height:14px}
+.time{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:104px}
+.scrub{flex:1 1 240px;min-width:0;position:relative;height:28px;display:flex;align-items:center}
+.scrub input{width:100%;margin:0;accent-color:var(--amber)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.seg button{appearance:none;border:0;background:transparent;color:var(--muted);font:600 12px var(--f-mono);padding:8px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink)}
+.chap{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;list-style:none;margin:0;padding:0}
+.chap button{width:100%;text-align:left;appearance:none;background:transparent;border:0;border-top:2px solid var(--line);color:var(--paper);padding:10px 0 4px;cursor:pointer;font:600 14px/1.3 var(--f-display)}
+.chap button small{display:block;font:500 11px var(--f-mono);color:var(--muted);letter-spacing:.08em;margin-bottom:4px}
+.chap button.on{border-top-color:var(--amber)}
+
+/* conteúdo */
+.idea{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.idea > div{display:grid;gap:8px;align-content:start;min-width:0}
+.idea h3{margin:0;font-size:20px;letter-spacing:-.01em}
+.idea p{color:var(--muted)}
+.quote{font-family:var(--f-serif);font-style:italic;font-size:clamp(26px,3.6vw,40px);line-height:1.15;color:var(--paper);max-width:28ch}
+.tablewrap{overflow-x:auto;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px 12px 0;border-bottom:1px solid var(--line)}
+th{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+td:first-child{font-family:var(--f-mono);color:var(--amber);white-space:nowrap;font-variant-numeric:tabular-nums}
+td b{font-weight:700}
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 28px;margin:0;padding:0;list-style:none}
+.lines li{padding:14px 0;border-bottom:1px solid var(--line);font-size:19px;font-weight:700;letter-spacing:-.01em}
+.lines li span{display:block;font:500 11px var(--f-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.phase{background:var(--panel);border-radius:10px;padding:20px;display:grid;gap:10px;align-content:start;min-width:0}
+.phase h3{margin:0;font-size:20px}
+.phase ul{margin:0;padding-left:18px;color:var(--muted);display:grid;gap:6px}
+.files{display:grid;gap:8px;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.files code{color:var(--paper);overflow-wrap:anywhere}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+@media (prefers-reduced-motion: reduce){.big span{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Nexus Agency · Filme de lançamento · 48 s</div>
+    <h1>Reposicione. <em>Renasça.</em></h1>
+    <p class="lede">Um comercial em motion design que apresenta a Nexus como a agência que tira marcas do passado: reposicionamento digital e rebranding, do diagnóstico à presença em cada tela.</p>
+  </header>
+
+  <section class="theater" aria-label="Filme">
+    <div class="screen" id="screen">
+      <div id="stage" aria-hidden="true"></div>
+      <button class="big" id="bigplay" type="button" aria-label="Assistir com som">
+        <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg>Assistir com som</span>
+      </button>
+    </div>
+    <div class="bar">
+      <button class="btn" id="play" type="button" aria-label="Reproduzir"><svg viewBox="0 0 24 24" fill="currentColor"><path id="playicon" d="M6 4l15 8-15 8z"/></svg><span id="playlbl">Play</span></button>
+      <span class="time" id="time">00:00 / 00:48</span>
+      <div class="scrub"><input id="scrub" type="range" min="0" max="48" step="0.01" value="46.6" aria-label="Posição no filme"></div>
+      <div class="seg" role="group" aria-label="Formato">
+        <button type="button" id="f169" aria-pressed="true">16:9</button>
+        <button type="button" id="f916" aria-pressed="false">9:16</button>
+      </div>
+      <button class="btn" id="mute" type="button" aria-pressed="false">Som ligado</button>
+    </div>
+    <ol class="chap" id="chap">
+      <li><button type="button" data-t="0"><small>00:00</small>Ficou para trás</button></li>
+      <li><button type="button" data-t="5.6"><small>00:05</small>Um scroll</button></li>
+      <li><button type="button" data-t="11.8"><small>00:12</small>Ponto de virada</button></li>
+      <li><button type="button" data-t="14"><small>00:14</small>Método Nexus</button></li>
+      <li><button type="button" data-t="24"><small>00:24</small>A nova marca</button></li>
+      <li><button type="button" data-t="32"><small>00:32</small>Antes / depois</button></li>
+      <li><button type="button" data-t="38"><small>00:38</small>O que muda</button></li>
+      <li><button type="button" data-t="42"><small>00:42</small>Assinatura</button></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>A ideia</h2>
+    <p class="quote">“Marcas não envelhecem. Elas ficam para trás.”</p>
+    <div class="idea">
+      <div><div class="mono">Insight</div><h3>O dono da marca não vê o próprio atraso</h3><p>Ninguém acorda achando que a própria marca ficou velha. Ela só para de ser escolhida, um scroll de cada vez. O filme mostra esse momento de fora.</p></div>
+      <div><div class="mono">Mecânica</div><h3>O protagonista se chama “Sua Marca”</h3><p>O logo antigo do filme é literalmente “Sua Marca”, com swoosh, bisel e “Qualidade e Confiança desde 2009”. Quem assiste se reconhece no primeiro segundo e quer ver a própria versão 2026.</p></div>
+      <div><div class="mono">Prova</div><h3>O método aparece, não só a promessa</h3><p>Diagnóstico, estratégia, identidade e presença digital viram quatro capítulos visuais. O mapa de posicionamento mostra a marca saindo de “genérica e esquecível” para “única e desejada”.</p></div>
+      <div><div class="mono">Assinatura</div><h3>Nexus: o ponto onde tudo se conecta</h3><p>O ponto âmbar que interrompe o glitch aos 12 s é o mesmo nó do símbolo Nexus no final. A virada da marca tem um lugar, e é a Nexus.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Roteiro</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Tempo</th><th>Imagem</th><th>Texto na tela</th><th>Som</th></tr></thead>
+        <tbody>
+          <tr><td>00:00</td><td>Tela de CRT. O logo “Sua Marca” pisca, com o arquivo “FINAL_v7_agora_vai.jpg”.</td><td><b>Marcas não envelhecem.</b> Elas ficam <i>para trás.</i></td><td>Drone grave, tic-tac de relógio</td></tr>
+          <tr><td>00:05</td><td>O logo encolhe até virar um card num feed infinito que acelera.</td><td><b>Um scroll.</b> É o tempo que você tem. Quem não se reposiciona…</td><td>Chimbal acelerando, riser</td></tr>
+          <tr><td>00:10</td><td>Glitch. As letras somem uma a uma. “ERRO 404 · relevância não encontrada”.</td><td><b>desaparece.</b></td><td>Bleeps digitais, corte seco</td></tr>
+          <tr><td>00:12</td><td>Silêncio. Um ponto âmbar acende no escuro e explode em azul ultramar.</td><td>E se ela pudesse <i>renascer?</i></td><td>Impacto sub, sino</td></tr>
+          <tr><td>00:14</td><td>Método Nexus em quatro etapas: auditoria com nota 38/100, mapa de posicionamento, construção do símbolo e da paleta, site, app e post.</td><td>Diagnóstico. Estratégia. Identidade. Presença digital.</td><td>Kick entra, baixo e arpejo em Lá menor</td></tr>
+          <tr><td>00:24</td><td>Flash. A nova “sua marca.” aparece e vai para o mundo: outdoor, app, social, papelaria, site, stories, sistema.</td><td><b>Mesma essência. Nova potência. Em todo lugar.</b></td><td>Drop completo, um corte por tempo</td></tr>
+          <tr><td>00:32</td><td>Antes e depois com divisória deslizante: 2009 contra 2026.</td><td>Reposicionar é ocupar um <i>novo lugar</i> na mente de quem importa.</td><td>Groove segue</td></tr>
+          <tr><td>00:38</td><td>Três cortes secos em cores cheias; a palavra se alarga no eixo de largura da fonte.</td><td><b>Clareza. Relevância. Desejo.</b></td><td>Stabs de acorde</td></tr>
+          <tr><td>00:42</td><td>O N da Nexus se desenha, os nós acendem, o wordmark se expande.</td><td><b>NEXUS Agency.</b> Reposicione. <i>Renasça.</i> Agende seu diagnóstico de marca.</td><td>Impacto final, brilho, acorde aberto</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Linhas de campanha</h2>
+    <ul class="lines">
+      <li><span>Assinatura</span>Reposicione. Renasça.</li>
+      <li><span>Manifesto</span>Marcas não envelhecem. Elas ficam para trás.</li>
+      <li><span>Feed / Reels</span>Um scroll é todo o tempo que você tem.</li>
+      <li><span>Oferta</span>Qual a nota da sua marca? Faça o diagnóstico.</li>
+      <li><span>LinkedIn</span>Reposicionar é ocupar um novo lugar na mente de quem importa.</li>
+      <li><span>OOH</span>Sua marca, versão 2026.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Desdobramentos</h2>
+    <div class="phases">
+      <div class="phase"><div class="mono">Semana 1 · Provocação</div><h3>“Ainda em 2009?”</h3><ul><li>Reels com só os 10 primeiros segundos, terminando no glitch</li><li>Enquete nos stories: “sua marca tem mais de 5 anos sem mudar?”</li><li>Carrossel com logos genéricos e a pergunta “qual desses é o seu?”</li></ul></div>
+      <div class="phase"><div class="mono">Semana 2 · Lançamento</div><h3>O filme completo</h3><ul><li>48 s em 16:9 para YouTube e site, 9:16 para Reels e TikTok</li><li>Cortes de 15 s (00:24–00:32 + assinatura) para mídia paga</li><li>Post do antes e depois com divisória como carrossel</li></ul></div>
+      <div class="phase"><div class="mono">Semanas 3 a 6 · Conversão</div><h3>Diagnóstico de marca</h3><ul><li>A nota “Saúde da marca 38/100” do filme vira um quiz real</li><li>Resultado em PDF com os quatro pontos do diagnóstico</li><li>Lead qualificado segue para reunião com a Nexus</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Arquivos</h2>
+    <div class="files">
+      <div>Vídeo 16:9 · <code>nexus-campaign/output/nexus-reposicione-16x9.mp4</code></div>
+      <div>Vídeo 9:16 · <code>nexus-campaign/output/nexus-reposicione-9x16.mp4</code></div>
+      <div>Trilha original · <code>nexus-campaign/assets/audio/nexus-soundtrack.mp3</code></div>
+      <div>Plano completo · <code>nexus-campaign/CAMPANHA.md</code></div>
+    </div>
+  </section>
+
+  <footer>Filme, trilha e identidade de exemplo feitos do zero para a Nexus Agency. “Sua Marca” é uma marca fictícia usada como espelho do cliente. O domínio <span class="mono" style="text-transform:none">nexus.agency</span> no CTA é provisório.</footer>
+</div>
+
+<audio id="music" src="assets/audio/nexus-soundtrack.mp3" preload="auto"></audio>
+<script src="film.js"></script>
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const screen = $('screen'), audio = $('music'), scrub = $('scrub');
+  const POSTER = 46.6, DUR = 48;
+  let film = null, playing = false, t = POSTER, clock0 = 0, t0 = 0, audioOk = true;
+
+  const fmt = s => { s = Math.max(0, Math.floor(s)); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
+  const chapters = Array.from(document.querySelectorAll('#chap button'));
+  function ui() {
+    $('time').textContent = fmt(t) + ' / 00:48';
+    scrub.value = t.toFixed(2);
+    let on = 0; chapters.forEach((b, i) => { if (t >= Number(b.dataset.t)) on = i; });
+    chapters.forEach((b, i) => b.classList.toggle('on', i === on));
+    $('playicon').setAttribute('d', playing ? 'M6 4h4v16H6zM14 4h4v16h-4z' : 'M6 4l15 8-15 8z');
+    $('playlbl').textContent = playing ? 'Pausar' : (t >= DUR - 0.05 ? 'De novo' : 'Play');
+    $('play').setAttribute('aria-label', playing ? 'Pausar' : 'Reproduzir');
+  }
+  function draw() { if (film) film.seek(t); ui(); }
+
+  audio.addEventListener('error', () => { audioOk = false; });
+  function now() { return performance.now() / 1000; }
+  function play() {
+    if (t >= DUR - 0.05) t = 0;
+    playing = true; $('bigplay').hidden = true;
+    clock0 = now(); t0 = t;
+    if (audioOk) {
+      try { audio.currentTime = t; const p = audio.play(); if (p) p.catch(() => { audioOk = false; clock0 = now(); t0 = t; }); } catch (e) { audioOk = false; }
+    }
+    requestAnimationFrame(loop);
+  }
+  function pause() { playing = false; try { audio.pause(); } catch (e) {} ui(); }
+  function loop() {
+    if (!playing) return;
+    if (audioOk && !audio.paused && audio.readyState >= 2) t = audio.currentTime;
+    else t = t0 + (now() - clock0);
+    if (t >= DUR) { t = DUR - 0.001; draw(); pause(); return; }
+    draw();
+    requestAnimationFrame(loop);
+  }
+  function seekTo(s) {
+    t = Math.min(DUR - 0.001, Math.max(0, s));
+    clock0 = now(); t0 = t;
+    if (audioOk) { try { audio.currentTime = t; } catch (e) {} }
+    draw();
+  }
+
+  $('bigplay').addEventListener('click', () => seekTo(0) || play());
+  $('play').addEventListener('click', () => (playing ? pause() : play()));
+  scrub.addEventListener('input', () => { seekTo(Number(scrub.value)); $('bigplay').hidden = true; });
+  chapters.forEach(b => b.addEventListener('click', () => { seekTo(Number(b.dataset.t)); $('bigplay').hidden = true; if (!playing) play(); }));
+  $('mute').addEventListener('click', () => {
+    audio.muted = !audio.muted;
+    $('mute').textContent = audio.muted ? 'Som desligado' : 'Som ligado';
+    $('mute').setAttribute('aria-pressed', String(audio.muted));
+  });
+  function setFormat(v) {
+    screen.classList.toggle('v', v);
+    $('f169').setAttribute('aria-pressed', String(!v));
+    $('f916').setAttribute('aria-pressed', String(v));
+    try { localStorage.setItem('nx-format', v ? 'v' : 'h'); } catch (e) {}
+    requestAnimationFrame(() => { if (film) { film.layout(); draw(); } });
+  }
+  $('f169').addEventListener('click', () => setFormat(false));
+  $('f916').addEventListener('click', () => setFormat(true));
+  document.addEventListener('keydown', e => {
+    if (e.code === 'Space' && !/INPUT|BUTTON/.test(document.activeElement.tagName)) { e.preventDefault(); playing ? pause() : play(); }
+  });
+
+  let saved = null;
+  try { saved = localStorage.getItem('nx-format'); } catch (e) {}
+  const startV = saved ? saved === 'v' : window.matchMedia('(max-width: 640px) and (orientation: portrait)').matches;
+  if (startV) setFormat(true);
+
+  NexusFilm.ready().then(() => {
+    film = NexusFilm.mount($('stage'));
+    requestAnimationFrame(() => requestAnimationFrame(() => { film.layout(); draw(); }));
+    let rz = 0;
+    new ResizeObserver(() => { cancelAnimationFrame(rz); rz = requestAnimationFrame(() => { film.layout(); draw(); }); }).observe(screen);
+  });
+  ui();
+})();
+</script>
